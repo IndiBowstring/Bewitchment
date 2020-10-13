@@ -21,6 +21,7 @@ gradle-app.setting
 /*.iml
 /*.ipr
 /*.iws
+/*.vs
 #Vim backups
 *~
 #manual version override
