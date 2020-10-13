@@ -198,6 +198,10 @@ public class TileEntityWitchesAltar extends ModTileEntity implements ITickable {
 		if (Loader.isModLoaded("dynamictrees")) {
 			if (state.getBlock() instanceof ITreePart) return state;
 		}
+		else if(Loader.isModLoaded("tfc")) {
+			if(state.getBlock() instanceof BlockLeaves)
+				return state.withProperty(BlockLeaves.DECAYABLE, false);
+		}
 		if (state.getBlock() instanceof BlockLog) state = state.withProperty(BlockLog.LOG_AXIS, BlockLog.EnumAxis.Y);
 		else if (state.getBlock() instanceof BlockStatue) state = state.getBlock().getDefaultState();
 		else if (state.getBlock() instanceof BlockRotatedPillar)
@@ -230,7 +234,7 @@ public class TileEntityWitchesAltar extends ModTileEntity implements ITickable {
 			int current = map.getOrDefault(state0, 0);
 			//What I don't understand is why this works. According to Moriya this shouldn't work. And yet it just. Works. WTF?
 			if (map.keySet().isEmpty() || current < 4 * map.keySet().size()) {
-				map.put(state0, maxPower += 125);
+				map.put(state0, maxPower += 100);
 				maxPower++;
 			}
 		}
