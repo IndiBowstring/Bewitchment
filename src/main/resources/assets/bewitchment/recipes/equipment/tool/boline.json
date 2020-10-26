@@ -12,7 +12,7 @@
     },
     "G": {
       "type": "forge:ore_dict",
-      "ore": "gemAll"
+      "ore": "gemFlawed"
     }
   },
   "result": {
