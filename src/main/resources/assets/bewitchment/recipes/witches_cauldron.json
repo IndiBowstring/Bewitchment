@@ -8,7 +8,7 @@
   "key": {
     "N": {
       "type": "forge:ore_dict",
-      "ore": "nuggetIron"
+      "ore": "oreWroughtIronSmall"
     },
     "I": {
       "type": "forge:ore_dict",

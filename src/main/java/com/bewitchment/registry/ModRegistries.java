@@ -279,7 +279,7 @@ public class ModRegistries {
 		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "deflection"), Util.get(Items.CHORUS_FRUIT_POPPED), new PotionEffect(ModPotions.deflection, (20 * 30))));
 		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "revealing"), Util.get(Items.ENDER_PEARL, ModObjects.eye_of_old), new PotionEffect(ModPotions.revealing, 1)));
 		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "disrobing"), Util.get("tallow"), new PotionEffect(ModPotions.disrobing, 1)));
-		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "sinking"), Util.get("nuggetGold", "nuggetIron", "nuggetColdIron", "nuggetCopper", "nuggetTin", "nuggetBronze", "nuggetLead"), new PotionEffect(ModPotions.sinking, (20 * 20))));
+		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "sinking"), Util.get("nuggetGold", "oreWroughtIronSmall", "nuggetColdIron", "nuggetCopper", "nuggetTin", "nuggetBronze", "nuggetLead"), new PotionEffect(ModPotions.sinking, (20 * 20))));
 		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "cursed_leaps"), Util.get(ModObjects.toe_of_frog), new PotionEffect(ModPotions.cursed_leaps, 1)));
 		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "fear"), Util.get(ModObjects.demon_heart), new PotionEffect(ModPotions.fear, (20 * 30))));
 		event.getRegistry().register(new Brew(new ResourceLocation(Bewitchment.MODID, "corrosion"), Util.get(ModObjects.oil_of_vitriol), new PotionEffect(ModPotions.corrosion, (20 * 30))));
@@ -328,7 +328,7 @@ public class ModRegistries {
 
 	@SubscribeEvent
 	public static void registerIncenses(RegistryEvent.Register<Incense> event) {
-		event.getRegistry().register(new Incense(new ResourceLocation(Bewitchment.MODID, "vitality"), Arrays.asList(Util.get(ModObjects.dragons_blood_resin), Util.get(ModObjects.oak_apple_gall), Util.get(ModObjects.essence_of_vitality), Util.get(ModObjects.catechu_brown), Util.get("nuggetIron")), Arrays.asList(MobEffects.RESISTANCE, MobEffects.STRENGTH), 600));
+		event.getRegistry().register(new Incense(new ResourceLocation(Bewitchment.MODID, "vitality"), Arrays.asList(Util.get(ModObjects.dragons_blood_resin), Util.get(ModObjects.oak_apple_gall), Util.get(ModObjects.essence_of_vitality), Util.get(ModObjects.catechu_brown), Util.get("oreWroughtIronSmall")), Arrays.asList(MobEffects.RESISTANCE, MobEffects.STRENGTH), 600));
 		event.getRegistry().register(new Incense(new ResourceLocation(Bewitchment.MODID, "deftness"), Arrays.asList(Util.get(ModObjects.dragons_blood_resin), Util.get(Items.SUGAR), Util.get("feather"), Util.get(ModObjects.ectoplasm), Util.get(ModObjects.essence_of_vitality)), Arrays.asList(MobEffects.JUMP_BOOST, MobEffects.SPEED), 600));
 		event.getRegistry().register(new Incense(new ResourceLocation(Bewitchment.MODID, "invigorating"), Arrays.asList(Util.get(ModObjects.dragons_blood_resin), Util.get(Items.SUGAR), Util.get(Items.POTATO), Util.get(Blocks.YELLOW_FLOWER), Util.get(ModObjects.juniper_berries)), Arrays.asList(MobEffects.HASTE, MobEffects.ABSORPTION), 600));
 		event.getRegistry().register(new Incense(new ResourceLocation(Bewitchment.MODID, "cats_eye"), Arrays.asList(Util.get(ModObjects.dragons_blood_resin), Util.get(Items.GLOWSTONE_DUST), Util.get(Blocks.RED_FLOWER), Util.get(Items.CARROT)), Collections.singletonList(MobEffects.NIGHT_VISION), 600));
