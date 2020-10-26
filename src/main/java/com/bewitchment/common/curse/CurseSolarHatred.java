@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 public class CurseSolarHatred extends Curse {
 	public CurseSolarHatred() {
-		super(new ResourceLocation(Bewitchment.MODID, "solar_hatred"), Arrays.asList(Util.get(ModObjects.snake_venom), Util.get("nuggetGold"), Util.get(ModObjects.fiery_unguent), Util.get(ModObjects.salt), Util.get(Items.ROTTEN_FLESH), Util.get(ModObjects.taglock)), false, false, CurseCondition.EXIST);
+		super(new ResourceLocation(Bewitchment.MODID, "solar_hatred"), Arrays.asList(Util.get(ModObjects.snake_venom), Util.get("oreGoldSmall"), Util.get(ModObjects.fiery_unguent), Util.get(ModObjects.salt), Util.get(Items.ROTTEN_FLESH), Util.get(ModObjects.taglock)), false, false, CurseCondition.EXIST);
 	}
 
 	@Override

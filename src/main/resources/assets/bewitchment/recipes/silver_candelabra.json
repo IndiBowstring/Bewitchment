@@ -15,7 +15,7 @@
     },
     "R": {
       "type": "forge:ore_dict",
-      "ore": "nuggetSilver"
+      "ore": "oreSilverSmall"
     }
   },
   "result": {
