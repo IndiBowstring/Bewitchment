@@ -149,7 +149,7 @@ public class TileEntityWitchesCauldron extends TileEntityAltarStorage implements
 						IFluidHandlerItem cap = player.getHeldItem(hand).getCapability(CapabilityFluidHandler.FLUID_HANDLER_ITEM_CAPABILITY, null);
 						IFluidTankProperties[] properties = cap.getTankProperties();
 						for (IFluidTankProperties property : properties) {
-							if ((property.canDrainFluidType(new FluidStack(FluidRegistry.WATER, 1000)) || property.canDrainFluidType(new FluidStack(FluidRegistry.WATER, 1000))) && FluidUtil.interactWithFluidHandler(player, hand, tank)) {
+							if ((property.canDrainFluidType(new FluidStack(FluidRegistry.getFluid("fresh_water"), 1000)) || property.canDrainFluidType(new FluidStack(FluidRegistry.getFluid("fresh_water"), 1000))) && FluidUtil.interactWithFluidHandler(player, hand, tank)) {
 								world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 2);
 								break;
 							}

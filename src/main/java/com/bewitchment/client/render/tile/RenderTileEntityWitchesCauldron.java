@@ -34,7 +34,7 @@ public class RenderTileEntityWitchesCauldron extends TileEntitySpecialRenderer<T
 			GlStateManager.translate(x + 0.125, y + tile.getLiquidHeight(), z + 0.125);
 			GlStateManager.rotate(90, 1, 0, 0);
 			GlStateManager.scale(0.0460425, 0.0460425, 0.0460425);
-			boolean water = stack.getFluid() == FluidRegistry.WATER;
+			boolean water = stack.getFluid() == FluidRegistry.getFluid("fresh_water");
 			if (water) GlStateManager.color(tile.color[0] / 255f, tile.color[1] / 255f, tile.color[2] / 255f);
 			Minecraft.getMinecraft().renderEngine.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
 			TextureAtlasSprite sprite = Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(water ? TEX.toString() : stack.getFluid().getStill().toString());
